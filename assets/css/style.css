@@ -1,0 +1,386 @@
+/* u3142931, Project 2: Responsive Website, Front-End Web Design, Winter Term 2019, Style.css */
+
+/* All elements */
+*{
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    padding: 0px;
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+/* <p> paragraph tags */
+p{
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation bar */
+.nav{
+    overflow: hidden;
+    background: #2C2C2C;
+    padding-left: 5%;
+}
+
+/* Style the navigation bar links */
+.nav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+/* Style of the navigation bar links on cursor hover */
+.nav a:hover{
+    color: #987A3E;
+}
+
+/* Header Image */
+.headerimage{
+    background-image: url(../house-images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg);
+    background-color: #313131;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #987A3E;
+}
+
+/* Header Content */
+.headercontent{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 300px;
+}
+
+/* Main logo - Heading text displayed on each page */
+.mainlogo{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 100%;
+}
+
+/* Main logo h1 element */
+.mainlogo h1{
+    font-family: b;
+    font-size: 70px;
+    margin: 0px;
+}
+
+/* Top row (only relevant to index.html page) */
+.toprow{
+    overflow: hidden;
+    background: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+/* Top row (only relevant to index.html page) */
+.toprow bodyintro{
+    float: left;
+    display: block; 
+}
+
+/* Row */
+.row{
+    overflow: hidden;
+    background: #f1f1f1;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Column - 3 columns with equal width are floated next to eachother */
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: justify;
+}
+
+/* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Images displayed on all pages except image-gallery.html */
+.responsiveimage{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 300px;
+    border: 2px solid #f1f1f1;
+}
+
+/* Border displays when hovering with cursor over an image */
+.responsiveimage:hover{
+    border: 2px solid #987A3E;
+}
+
+/* Image caption - Semantic HTML5 example */
+.column figcaption{
+    text-align: left;
+    font-size: 10px;
+    color: gray;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    background: #f1f1f1;
+    margin-top: 20px;
+}
+
+/* Content pages CSS */
+
+.content{
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+/* Left (Image) column */
+.content.left {
+    padding-left: 5%;
+    width: 33.33%;
+}
+
+/* Right (Main) column */
+.content.right {
+    padding-right: 5%;
+    width: 66.66%;
+    text-align: justify;
+}
+
+.content.right p{
+    font-family: ;
+    font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.contentrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 2nd Row */
+.content{
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+/* Left (Main) column */
+.content.left2 {
+    padding-left: 5%;
+    width: 66.66%;
+    text-align: justify;
+}
+
+.content.left2 p{
+    font-family: ;
+    font-size: 16px;
+}
+
+/* Right (Image) column */
+.content.right2 {
+    padding-right: 5%;
+    width: 33.33%;
+
+}
+
+/* Clear floats after the columns */
+.contentrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%
+}
+
+
+/* Create four equal columns that sits next to each other */
+.gcolumn {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 20%;
+  
+}
+
+.gcolumn img {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.gcolumn img:hover{
+    border: 2px solid #987A3E;
+}
+
+/* Responsive layout for screens of 1000px - This can be considered a mid-sized screen*/
+@media screen and (max-width: 1000px) {
+    .nav{
+        overflow: hidden;
+        background: #2C2C2C;
+        padding-left: 5%;
+    }
+
+    .nav a{
+        float: left;
+        display:block;
+        color: white;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+    }
+    
+    .headercontent{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 300px;
+    }
+    
+    .mainlogo h1{
+        font-family: b;
+        font-size: 50px;
+        margin: 0px;
+    }
+    .content.left {
+        padding-left: 5%;
+        width: 50%;
+    }
+
+    .content.right {
+        padding-right: 5%;
+        width: 50%;
+        text-align: justify;
+    }
+    
+    .content.left2 {
+        padding-left: 5%;
+        width: 50%;
+        text-align: justify;
+    }
+    
+    .content.right2 {
+        padding-right: 5%;
+        width: 50%;
+    }
+    
+    .column{
+        float: left;
+        width: 50%;
+        padding: 15px;
+        text-align: justify;
+    }
+    
+    .gcolumn {
+        -ms-flex: 33.33%;
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* Responsive layout for screens with width 600px - THis can be considered a small-sized screen */
+@media screen and (max-width: 600px) {
+    .nav{
+        overflow: hidden;
+        background: #2C2C2C;
+        padding-left: 5%;
+    }
+
+    .nav a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+    
+    .headercontent{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 300px;
+    }
+    
+    .mainlogo h1{
+        font-family: b;
+        font-size: 35px;
+        margin: 0px;
+    }
+    
+    .content.left {
+
+        padding-left: 5%;
+        width: 100%;
+    }
+
+    .content.right {
+  
+        padding-right: 5%;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .content.left2 {
+        padding-left: 5%;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .content.right2 {
+        padding-right: 5%;
+        width: 100%;
+    }
+    
+    .column{
+        float: left;
+        width: 100%;
+        padding: 15px;
+        text-align: justify;
+    }
+    
+    .gcolumn {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
